@@ -9,6 +9,7 @@
       body {
         background-color: hsl(0, 0%, 95%);
         font-size: 15px;
+        margin: initial
       }
 
       .container {
@@ -27,7 +28,7 @@
 
       .sedan, .suv, .luxury {
         flex: 1;
-        padding: 10px 30px;
+        padding: 30px 50px 10px 50px;
       }
       
       .sedan {
@@ -43,7 +44,7 @@
       }
 
       .sedan__image, .suv__image, .luxury__image {
-        height: 11%;
+        /* height: 11%; */
       }
 
       .sedan__content, .suv__content, .luxury__content {
@@ -61,6 +62,7 @@
       .sedan__button, .suv__button, .luxury__button {
         border-radius: 20px;
         padding: 6px 15px;
+        margin-top: 3vh;
       }
       
       .sedan__button{
@@ -78,13 +80,56 @@
         color: hsl(179, 100%, 13%);
       }
 
+      @media only screen and (min-width: 400px) {
+        .container {
+          width: 80vw;
+          margin: auto;
+        }
+      }
+
+      @media only screen and (min-width: 500px) {
+        .container {
+          width: 70vw;
+        }
+      }
+
       @media only screen and (min-width: 600px) {
+        .container {
+          width: 60vw;
+        }
+      }
+
+      @media only screen and (min-width: 710px) {
         main {
           flex-direction: row;
-          height: 60vh;
+          height: 55vh;
+        }
+
+        .container {
+          margin:auto;
+          width: initial;
+        }
+
+        h2 {
+          font-size: xx-large;
         }
         .sedan__button, .suv__button, .luxury__button {
           margin-top: 20px;
+          max-width: 100%;
+          padding: 10px 20px;
+        }
+
+
+        .sedan, .suv, .luxury {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+        }
+      }
+
+      @media only screen and (min-width: 1000px) {
+        .container {
+          width: 70vw;
         }
       }
 
@@ -94,31 +139,43 @@
     <div class="container">
       <main>
         <article class="sedan">
-          <img src="images/icon-sedans.svg" class="sedan__image" alt="sudan car" />
-          <h2>Sedan</h2>
-          <p class="sedan__content">
-            Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
-          or on your next road trip.
-          </p>
-          <button type="button" class="sedan__button">Learn More</button>
+          <section>
+            <img src="images/icon-sedans.svg" class="sedan__image" alt="sudan car" />
+            <h2>Sedans</h2>
+            <p class="sedan__content">
+              Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+            or on your next road trip.
+            </p>
+          </section>
+          <section>
+            <button type="button" class="sedan__button">Learn More</button>
+          </section>
         </article>
         <article class="suv">
-          <img src="images/icon-suvs.svg" class="suv__image" alt="SUV car/van" />
-          <h2>SUVS</h2>
-          <p class="suv__content">
-            Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
-          and off-road adventures.
-          </p>
-          <button type="button" class="suv__button">Learn More</button>
+          <section>
+            <img src="images/icon-suvs.svg" class="suv__image" alt="SUV car/van" />
+            <h2>SUVS</h2>
+            <p class="suv__content">
+              Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+            and off-road adventures.
+            </p>
+          </section>
+          <section>
+            <button type="button" class="suv__button">Learn More</button>
+          </section>
         </article>
         <article class="luxury">
-          <img src="images/icon-luxury.svg" class="luxury__image" alt="luxury car" />
-          <h2>Luxury</h2>
-          <p class="luxury__content">
-            Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
-          rental and arrive in style.
-          </p>
-          <button type="button" class="luxury__button">Learn More</button>          
+          <section>
+            <img src="images/icon-luxury.svg" class="luxury__image" alt="luxury car" />
+            <h2>Luxury</h2>
+            <p class="luxury__content">
+              Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+            rental and arrive in style.
+            </p>
+          </section>
+          <section>
+            <button type="button" class="luxury__button">Learn More</button> 
+          </section>
         </article>
       </main>
     </div>
