@@ -1,5 +1,7 @@
 Responsive 3 column card component built with HTML & CSS
 
+![Side by Side screen shot](./images/What-I-Built-1.png)
+
 This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
@@ -18,17 +20,9 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 
-### Screenshot
-
-![Side by Side screen shot](./images/What-I-Built-1.png)
-![Screenshot of button in an active state](./images/active-state.PNG)
-
-
 ### Links
 - [Click to play with the solution](https://dev.to/jcsmileyjr/frontend-challenge-3-three-column-card-component-3kik)
 - [Blog post describing the development journey of this project](https://dev.to/jcsmileyjr/frontend-challenge-3-three-column-card-component-3kik/edit)
-
-## My process
 
 ### Built with
 
